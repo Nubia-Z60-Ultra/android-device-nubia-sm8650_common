@@ -159,6 +159,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V1-ndk.vendor
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss-V3-ndk.vendor
+
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator-V1-ndk.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
@@ -229,54 +237,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
 
-# Netd
-PRODUCT_PACKGES += \
-    android.system.net.netd-V1-ndk.vendor
-
-# Neural Networks
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks-V1-ndk.vendor
-
-# NFC
-$(call inherit-product, vendor/nxp/opensource/commonsys/packages/apps/Nfc/nfc_system_product.mk)
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.1.vendor \
-    libkeymaster_messages.vendor
-
-# Keymint
-PRODUCT_PACKAGES += \
-    android.hardware.hardware_keystore.xml \
-    android.hardware.security.keymint-V2-ndk.vendor \
-    android.hardware.security.keymint-V3-ndk.vendor \
-    android.hardware.security.rkp-V3-ndk.vendor \
-    android.hardware.security.secureclock-V1-ndk.vendor \
-    android.hardware.security.sharedsecret-V1-ndk.vendor
-
-# Media
-PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.2.vendor \
-    libavservices_minijail \
-    libavservices_minijail.vendor \
-    libcodec2_soft_common.vendor \
-    libcodec2_hidl@1.2.vendor \
-    libcodec2_vndk.vendor \
-    libgui_vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libstagefrighthw \
-    libchrome.vendor
-
-PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
-
-# Netd
+# Netd 
 PRODUCT_PACKGES += \
     android.system.net.netd-V1-ndk.vendor
 
@@ -308,15 +269,9 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio.config-V2-ndk.vendor \
-    android.hardware.radio.data-V2-ndk \
     android.hardware.radio.sim-V2-ndk.vendor \
     android.hardware.radio.messaging-V2-ndk.vendor \
-    android.hardware.radio.modem-V2-ndk.vendor \
-    android.hardware.radio.network-V2-ndk.vendor \
-    android.hardware.radio.voice-V2-ndk.vendor \
-    android.hardware.radio.ims-V1-ndk.vendor \
-    android.hardware.radio.ims.media-V1-ndk.vendor \
-    android.hardware.radio.sap-V1-ndk.vendor
+    android.hardware.radio.modem-V2-ndk.vendor
 
 # Powershare
 PRODUCT_PACKAGES += \
