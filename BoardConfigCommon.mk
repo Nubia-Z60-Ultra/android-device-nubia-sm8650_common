@@ -12,6 +12,9 @@ BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 SOONG_CONFIG_qtidisplay_ubwcp_headers := false
 
+
+DEVICE_PATH := device/nubia/nx769j
+
 # A/B OTA
 AB_OTA_UPDATER := true
 
